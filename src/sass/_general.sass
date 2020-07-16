@@ -253,18 +253,24 @@ header
 				&::after, &::before
 					background-color: $check-mark-color
 .label-white
-		background-color: #ffffff
-		color: #070716
+	position: relative
+	background-color: #ffffff
+	color: #070716
+	z-index: 2
 .title-white, .subtitle-white
-		color: #ffffff
+	position: relative
+	color: #ffffff
+	z-index: 2
 .choice
-	min-height: 896px
+	position: relative
+	min-height: 895px
 	padding: 57px 0 138px 0
-	background: url(../img/bg/Rectangle_20.png) 0 499px no-repeat
-	background-color: #070716
+	background: url(../img/bg/Rectangle_20.png) center center / cover no-repeat
 	img
+		position: relative
 		display: block
 		margin: 56px auto
+		z-index: 4
 	&-text
 		margin: 0 auto
 		width: 297px
@@ -274,6 +280,15 @@ header
 		font-weight: 300
 		line-height: 24px
 		text-align: center
+	&-black
+		position: absolute
+		height: 499px
+		top: 0
+		left: 0
+		width: 100%
+		background-color: #070716
+		z-index: 1
+
 
 .require
 	padding: 68px 0 84px 0
